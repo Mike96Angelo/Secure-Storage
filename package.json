@@ -1,6 +1,6 @@
 {
   "name": "secure-web-storage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple wrapper for localStorage/sessionStorage that allows one to encrypt/decrypt the data being stored.",
   "main": "secure-storage.js",
   "scripts": {
