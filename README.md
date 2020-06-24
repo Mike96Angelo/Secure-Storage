@@ -20,6 +20,8 @@ $ npm install secure-web-storage
 ```JavaScript
 var CryptoJS = require("crypto-js");
 
+// NOTE: Your key should be user inputed or obtained through a secure authenticated request.
+//       Do NOT ship the Key in your code.
 var SECRET_KEY = 'my secret key';
 
 var secureStorage = new SecureStorage(localStorage, {
@@ -72,4 +74,4 @@ secureStorage.length;
 
 ```
 ## Security Best Practices 
-Handing someone a locked box with the key taped to it is not a good security practice. When using this library it is highly suggested that the key is not delivered with your code.  Keys should be a) user inputed or b) obtained from a server through a secure authenticated request. Do NOT ship the Key in your code.
+Handing someone a locked box with the key taped to it is not a good security practice. When using this library it is highly suggested that the key is not delivered with your code.  Keys should be a) user inputed or b) obtained through a secure authenticated request. Do NOT ship the Key in your code.
