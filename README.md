@@ -71,3 +71,5 @@ secureStorage.length;
 // the number of entries in the underlining sessionStorage/localStorage.
 
 ```
+## Security Best Practices 
+Handing someone a locked box with the key taped to it is not a good security practice. When using this library it is highly suggested that the key is not delivered with your code.  Keys should be a) user inputed or b) obtained from a server through a secure authenticated request. Do NOT ship the Key in your code.
